@@ -1,0 +1,12 @@
+{
+  "example.jpg-1": {
+    "filename": "example.jpg",
+    "size": "-1",
+    "regions": [{"region_attributes": {}, "shape_attributes": {"name": "rect", "x": 1, "y": 1, "width": 1, "height": 1}}],
+    "base64_img_data": "",
+    "file_attributes": {
+      "image": "data/example.jpg",
+      "raw": "data/example.jpg"
+    }
+  }
+}

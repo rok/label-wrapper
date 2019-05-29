@@ -96,19 +96,11 @@ class ImageSet(object):
     def import_labels(self, tfrecords_path):
         return self.importers[0].import_labels(self, tfrecords_path)
 
-    def load_json(self, input_file_path, input_folder_path, overwrite=False):
+    def load_json(self, input_file_path, overwrite=False):
         with open(input_file_path, 'r') as f:
             labels = json.load(f)
 
         filedicts = {k: Image(**v) for k, v in labels.items()}
-
-        for x in filedicts.values():
-            path = os.path.join(input_folder_path, x.filename)
-            if os.path.exists(path):
-                # x.fileref = path
-                x.file_attributes = {"image": path}
-            else:
-                raise FileNotFoundError("{path} not found.".format(path=path))
 
         if overwrite:
             self._image_dict = {**self._image_dict, **filedicts}

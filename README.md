@@ -2,6 +2,9 @@
 
 User friendly image bootstraping framework.
 
+# Demo
+See: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rok/label-wrapper-demo/master?filepath=label_wrapper.ipynb)
+
 # Label bootstrapping flow
 
 Label wrapper enables label bootstrapping process:

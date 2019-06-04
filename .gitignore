@@ -1,5 +1,9 @@
-.pytest_cache
+__pycache__/
+.pytest_cache/
 .idea
 *.egg-info
 dist/
 build/
+*.tfrecords
+examples/*.html
+.ipynb_checkpoints/

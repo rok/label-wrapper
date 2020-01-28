@@ -3,4 +3,4 @@ jinja2
 matplotlib
 numpy
 scikit-image
-tensorflow
+tensorflow==1.15.2
